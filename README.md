@@ -57,20 +57,20 @@ python pubmed_scraper.py -u <PUBMED_URL> -o <OUTPUT_CSV> [-p <CHROMEDRIVER_PATH>
 
 - `-u`, `--url`: The URL of the NCBI search page to scrape.
 - `-o`, `--output_csv`: The name of the output CSV file where the results will be saved.
-- `-p`, `--path` (optional): The path to the ChromeDriver executable. If not provided, it defaults to `/home/koala/biotools/bin/chromedriver`.
+- `-p`, `--path` (optional): The path to the ChromeDriver executable. If not provided, it defaults to `/path/to/chromedriver`.
 
 ## Examples
 
 ### Basic Usage with Default ChromeDriver Path
 
 ```bash
-python your_script_name.py -u "https://www.ncbi.nlm.nih.gov/pmc?term=(Reverse%20Vaccinology%5BBody%20-%20Key%20Terms%5D)%20AND%20%22Frontiers%20in%20Immunology%22%5BJournal%5D" -o "./results/ncbi_frontiers_articles.csv"
+python pubmed_scraper.py -u "https://www.ncbi.nlm.nih.gov/pmc?term=(Reverse%20Vaccinology%5BBody%20-%20Key%20Terms%5D)%20AND%20%22Frontiers%20in%20Immunology%22%5BJournal%5D" -o "./results/ncbi_frontiers_articles.csv"
 ```
 
 ### Specifying a Different ChromeDriver Path
 
 ```bash
-python your_script_name.py -u "https://www.ncbi.nlm.nih.gov/pmc?term=(Reverse%20Vaccinology%5BBody%20-%20Key%20Terms%5D)%20AND%20%22Frontiers%20in%20Immunology%22%5BJournal%5D" -o "./results/ncbi_frontiers_articles.csv" -p "/path/to/your/chromedriver"
+python pubmed_scraper.py -u "https://www.ncbi.nlm.nih.gov/pmc?term=(Reverse%20Vaccinology%5BBody%20-%20Key%20Terms%5D)%20AND%20%22Frontiers%20in%20Immunology%22%5BJournal%5D" -o "./results/ncbi_frontiers_articles.csv" -p "/path/to/your/chromedriver"
 ```
 
 ## Dependencies
